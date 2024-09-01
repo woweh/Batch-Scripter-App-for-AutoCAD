@@ -3,7 +3,7 @@ using Autodesk.AutoCAD.Runtime;
 
 namespace AutoCAD_Batch_Scripter
 {
-    public class BricsCADDialog
+    public class BatchScripterDialog
     {
         [CommandMethod("OW:BatchScripter")]
         public void BatchScripter()
