@@ -1,7 +1,7 @@
 ﻿using Autodesk.AutoCAD.ApplicationServices;
 using Autodesk.AutoCAD.Runtime;
 
-namespace AutoCAD_Batch_Scripter
+namespace Batch_Scripter
 {
     public class BatchScripterDialog
     {

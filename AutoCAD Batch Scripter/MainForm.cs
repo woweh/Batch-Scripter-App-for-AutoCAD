@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AutoCAD_Batch_Scripter
+namespace Batch_Scripter
 {
     public partial class MainForm : Form
     {

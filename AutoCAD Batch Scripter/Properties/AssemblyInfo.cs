@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AutoCAD Batch Scripter")]
+[assembly: AssemblyTitle("Batch Scripter App for AutoCAD")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Oliver Wackenreuther")]
-[assembly: AssemblyProduct("OW AutoCAD Batch Scripter R24")]
+[assembly: AssemblyProduct("Batch Scripter App for AutoCAD")]
 [assembly: AssemblyCopyright("Copyright © Oliver Wackenreuther 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -1,4 +1,4 @@
-﻿namespace AutoCAD_Batch_Scripter
+﻿namespace Batch_Scripter
 {
     partial class MainForm
     {
@@ -156,7 +156,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox1.Image = global::AutoCAD_Batch_Scripter.Properties.Resources.Logo_BW_NOBG;
+            this.pictureBox1.Image = global::Batch_Scripter.Properties.Resources.Logo_BW_NOBG;
             this.pictureBox1.Location = new System.Drawing.Point(12, 428);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 23);
