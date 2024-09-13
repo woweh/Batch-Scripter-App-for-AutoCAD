@@ -87,7 +87,7 @@ namespace Batch_Scripter
                     {
                         using (StreamWriter writer = new StreamWriter(tempScriptFile))
                         {
-                            writer.WriteLine("(setq originalSDI (getvar \"SDI\"))");
+                           // writer.WriteLine("(setq originalSDI (getvar \"SDI\"))");
                             writer.WriteLine("(setvar \"SDI\" 1)");
 
                             foreach (string drawingFile in drawingFiles)
@@ -119,7 +119,7 @@ namespace Batch_Scripter
                                     {
                                         writer.WriteLine($"(command \"_.SAVE\" \"{EscapePath(drawingFile)}\")");
                                     }
-                                    writer.WriteLine("(command \"_.CLOSE\" \"No\")");
+                                    //writer.WriteLine("(command \"_.CLOSE\" \"No\")");
                                 }
                                 catch (Exception ex)
                                 {
@@ -131,7 +131,8 @@ namespace Batch_Scripter
                                 }
                             }
 
-                            writer.WriteLine("(setvar \"SDI\" originalSDI)");
+                            writer.WriteLine("(setvar \"SDI\" 0)");
+                            writer.WriteLine("(command \"_.CLOSE\" \"No\")");
                         }
 
                         RunScriptFile(tempScriptFile);
@@ -148,20 +149,21 @@ namespace Batch_Scripter
             }
         }
 
-
         private void RunScriptFile(string scriptFilePath)
         {
             try
             {
                 Document doc = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument;
                 Editor ed = doc.Editor;
-                ed.Command($"(command \"_.SCRIPT\" \"{EscapePath(scriptFilePath)}\")");
+                string command = $"(command \"_.SCRIPT\" \"{EscapePath(scriptFilePath)}\")\n";
+                ed.Document.SendStringToExecute(command, true, false, false);
             }
             catch (Exception ex)
             {
                 ShowError("Error running the script file", ex);
             }
         }
+
 
         private void BrowseScriptFile()
         {
