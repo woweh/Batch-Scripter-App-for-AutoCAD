@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -239,6 +240,44 @@ namespace Batch_Scripter
             {
                 MessageBox.Show($"Unable to open link. {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void linkLblLicense_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string url = "https://github.com/OliversDev/Batch-Scripter-App-for-AutoCAD/blob/master/LICENSE.txt";
+            try
+            {
+                System.Diagnostics.Process.Start(url);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Unable to open link. {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void linkLblHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string url = "https://github.com/OliversDev/Batch-Scripter-App-for-AutoCAD/blob/master/README.md";
+            try
+            {
+                System.Diagnostics.Process.Start(url);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Unable to open link. {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void GitHub_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/OliversDev";
+            Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+        }
+
+        private void LinkedIn_Click(object sender, EventArgs e)
+        {
+            string url = "https://ca.linkedin.com/in/oliverwackenreuther";
+            Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
         }
     }
 }

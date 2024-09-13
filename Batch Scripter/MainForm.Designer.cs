@@ -35,15 +35,21 @@
             this.lblScriptContent = new System.Windows.Forms.Label();
             this.chkSaveDrawings = new System.Windows.Forms.CheckBox();
             this.linkLblFootnote = new System.Windows.Forms.LinkLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.LinkedIn = new System.Windows.Forms.PictureBox();
+            this.GitHub = new System.Windows.Forms.PictureBox();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            this.linkLblLicense = new System.Windows.Forms.LinkLabel();
+            this.linkLblHelp = new System.Windows.Forms.LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.LinkedIn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GitHub)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBrowseDrawings
             // 
             this.btnBrowseDrawings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBrowseDrawings.Location = new System.Drawing.Point(701, 250);
-            this.btnBrowseDrawings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBrowseDrawings.Margin = new System.Windows.Forms.Padding(4);
             this.btnBrowseDrawings.Name = "btnBrowseDrawings";
             this.btnBrowseDrawings.Size = new System.Drawing.Size(160, 28);
             this.btnBrowseDrawings.TabIndex = 0;
@@ -55,7 +61,7 @@
             // 
             this.btnRemoveDrawings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRemoveDrawings.Location = new System.Drawing.Point(869, 250);
-            this.btnRemoveDrawings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRemoveDrawings.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoveDrawings.Name = "btnRemoveDrawings";
             this.btnRemoveDrawings.Size = new System.Drawing.Size(160, 28);
             this.btnRemoveDrawings.TabIndex = 1;
@@ -67,7 +73,7 @@
             // 
             this.btnBrowseScript.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBrowseScript.Location = new System.Drawing.Point(701, 527);
-            this.btnBrowseScript.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBrowseScript.Margin = new System.Windows.Forms.Padding(4);
             this.btnBrowseScript.Name = "btnBrowseScript";
             this.btnBrowseScript.Size = new System.Drawing.Size(160, 28);
             this.btnBrowseScript.TabIndex = 2;
@@ -79,7 +85,7 @@
             // 
             this.btnRunScript.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRunScript.Location = new System.Drawing.Point(869, 527);
-            this.btnRunScript.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRunScript.Margin = new System.Windows.Forms.Padding(4);
             this.btnRunScript.Name = "btnRunScript";
             this.btnRunScript.Size = new System.Drawing.Size(160, 28);
             this.btnRunScript.TabIndex = 7;
@@ -95,7 +101,7 @@
             this.listBoxDrawings.FormattingEnabled = true;
             this.listBoxDrawings.ItemHeight = 16;
             this.listBoxDrawings.Location = new System.Drawing.Point(16, 30);
-            this.listBoxDrawings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxDrawings.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxDrawings.Name = "listBoxDrawings";
             this.listBoxDrawings.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listBoxDrawings.Size = new System.Drawing.Size(1012, 212);
@@ -106,7 +112,7 @@
             this.textBoxContents.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxContents.Location = new System.Drawing.Point(16, 306);
-            this.textBoxContents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxContents.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxContents.Multiline = true;
             this.textBoxContents.Name = "textBoxContents";
             this.textBoxContents.Size = new System.Drawing.Size(1012, 212);
@@ -140,7 +146,7 @@
             this.chkSaveDrawings.Checked = true;
             this.chkSaveDrawings.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkSaveDrawings.Location = new System.Drawing.Point(574, 533);
-            this.chkSaveDrawings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkSaveDrawings.Margin = new System.Windows.Forms.Padding(4);
             this.chkSaveDrawings.Name = "chkSaveDrawings";
             this.chkSaveDrawings.Size = new System.Drawing.Size(120, 20);
             this.chkSaveDrawings.TabIndex = 8;
@@ -154,7 +160,7 @@
             this.linkLblFootnote.AutoSize = true;
             this.linkLblFootnote.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.linkLblFootnote.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
-            this.linkLblFootnote.Location = new System.Drawing.Point(77, 533);
+            this.linkLblFootnote.Location = new System.Drawing.Point(158, 541);
             this.linkLblFootnote.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLblFootnote.Name = "linkLblFootnote";
             this.linkLblFootnote.Size = new System.Drawing.Size(235, 16);
@@ -164,17 +170,77 @@
             this.linkLblFootnote.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.linkLblFootnote.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblFootnote_LinkClicked);
             // 
-            // pictureBox1
+            // LinkedIn
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox1.Image = global::Batch_Scripter.Properties.Resources.Logo_BW_NOBG;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 527);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(53, 28);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.LinkedIn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.LinkedIn.Image = global::Batch_Scripter.Properties.Resources.LI_In_Bug;
+            this.LinkedIn.Location = new System.Drawing.Point(115, 526);
+            this.LinkedIn.Margin = new System.Windows.Forms.Padding(4);
+            this.LinkedIn.Name = "LinkedIn";
+            this.LinkedIn.Size = new System.Drawing.Size(35, 30);
+            this.LinkedIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LinkedIn.TabIndex = 14;
+            this.LinkedIn.TabStop = false;
+            this.LinkedIn.Click += new System.EventHandler(this.LinkedIn_Click);
+            // 
+            // GitHub
+            // 
+            this.GitHub.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.GitHub.Image = global::Batch_Scripter.Properties.Resources.github_mark_white;
+            this.GitHub.Location = new System.Drawing.Point(77, 526);
+            this.GitHub.Margin = new System.Windows.Forms.Padding(4);
+            this.GitHub.Name = "GitHub";
+            this.GitHub.Size = new System.Drawing.Size(30, 30);
+            this.GitHub.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.GitHub.TabIndex = 13;
+            this.GitHub.TabStop = false;
+            this.GitHub.Click += new System.EventHandler(this.GitHub_Click);
+            // 
+            // Logo
+            // 
+            this.Logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Logo.Image = global::Batch_Scripter.Properties.Resources.Logo_BW_NOBG;
+            this.Logo.Location = new System.Drawing.Point(16, 525);
+            this.Logo.Margin = new System.Windows.Forms.Padding(4);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(53, 30);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Logo.TabIndex = 12;
+            this.Logo.TabStop = false;
+            // 
+            // linkLblLicense
+            // 
+            this.linkLblLicense.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(174)))), ((int)(((byte)(16)))));
+            this.linkLblLicense.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.linkLblLicense.AutoSize = true;
+            this.linkLblLicense.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
+            this.linkLblLicense.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
+            this.linkLblLicense.Location = new System.Drawing.Point(401, 541);
+            this.linkLblLicense.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLblLicense.Name = "linkLblLicense";
+            this.linkLblLicense.Size = new System.Drawing.Size(91, 16);
+            this.linkLblLicense.TabIndex = 15;
+            this.linkLblLicense.TabStop = true;
+            this.linkLblLicense.Text = "MIT License ©";
+            this.linkLblLicense.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
+            this.linkLblLicense.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblLicense_LinkClicked);
+            // 
+            // linkLblHelp
+            // 
+            this.linkLblHelp.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(174)))), ((int)(((byte)(16)))));
+            this.linkLblHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.linkLblHelp.AutoSize = true;
+            this.linkLblHelp.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
+            this.linkLblHelp.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
+            this.linkLblHelp.Location = new System.Drawing.Point(500, 541);
+            this.linkLblHelp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLblHelp.Name = "linkLblHelp";
+            this.linkLblHelp.Size = new System.Drawing.Size(36, 16);
+            this.linkLblHelp.TabIndex = 16;
+            this.linkLblHelp.TabStop = true;
+            this.linkLblHelp.Text = "Help";
+            this.linkLblHelp.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
+            this.linkLblHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblHelp_LinkClicked);
             // 
             // MainForm
             // 
@@ -182,7 +248,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(1045, 567);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.linkLblHelp);
+            this.Controls.Add(this.linkLblLicense);
+            this.Controls.Add(this.LinkedIn);
+            this.Controls.Add(this.GitHub);
+            this.Controls.Add(this.Logo);
             this.Controls.Add(this.linkLblFootnote);
             this.Controls.Add(this.chkSaveDrawings);
             this.Controls.Add(this.btnRunScript);
@@ -194,17 +264,23 @@
             this.Controls.Add(this.btnRemoveDrawings);
             this.Controls.Add(this.btnBrowseDrawings);
             this.ForeColor = System.Drawing.Color.White;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1061, 605);
             this.Name = "MainForm";
             this.Text = "Batch Scripter";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LinkedIn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GitHub)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         private System.Windows.Forms.LinkLabel linkLblFootnote;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Logo;
+        private System.Windows.Forms.PictureBox GitHub;
+        private System.Windows.Forms.PictureBox LinkedIn;
+        private System.Windows.Forms.LinkLabel linkLblLicense;
+        private System.Windows.Forms.LinkLabel linkLblHelp;
     }
 }
