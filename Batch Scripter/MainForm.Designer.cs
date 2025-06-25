@@ -48,7 +48,7 @@
             // btnBrowseDrawings
             // 
             this.btnBrowseDrawings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBrowseDrawings.Location = new System.Drawing.Point(701, 250);
+            this.btnBrowseDrawings.Location = new System.Drawing.Point(738, 250);
             this.btnBrowseDrawings.Margin = new System.Windows.Forms.Padding(4);
             this.btnBrowseDrawings.Name = "btnBrowseDrawings";
             this.btnBrowseDrawings.Size = new System.Drawing.Size(160, 28);
@@ -60,7 +60,7 @@
             // btnRemoveDrawings
             // 
             this.btnRemoveDrawings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRemoveDrawings.Location = new System.Drawing.Point(869, 250);
+            this.btnRemoveDrawings.Location = new System.Drawing.Point(906, 250);
             this.btnRemoveDrawings.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoveDrawings.Name = "btnRemoveDrawings";
             this.btnRemoveDrawings.Size = new System.Drawing.Size(160, 28);
@@ -72,7 +72,7 @@
             // btnBrowseScript
             // 
             this.btnBrowseScript.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBrowseScript.Location = new System.Drawing.Point(701, 527);
+            this.btnBrowseScript.Location = new System.Drawing.Point(738, 527);
             this.btnBrowseScript.Margin = new System.Windows.Forms.Padding(4);
             this.btnBrowseScript.Name = "btnBrowseScript";
             this.btnBrowseScript.Size = new System.Drawing.Size(160, 28);
@@ -84,7 +84,7 @@
             // btnRunScript
             // 
             this.btnRunScript.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRunScript.Location = new System.Drawing.Point(869, 527);
+            this.btnRunScript.Location = new System.Drawing.Point(906, 527);
             this.btnRunScript.Margin = new System.Windows.Forms.Padding(4);
             this.btnRunScript.Name = "btnRunScript";
             this.btnRunScript.Size = new System.Drawing.Size(160, 28);
@@ -104,7 +104,7 @@
             this.listBoxDrawings.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxDrawings.Name = "listBoxDrawings";
             this.listBoxDrawings.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBoxDrawings.Size = new System.Drawing.Size(1012, 212);
+            this.listBoxDrawings.Size = new System.Drawing.Size(1049, 212);
             this.listBoxDrawings.TabIndex = 3;
             // 
             // textBoxContents
@@ -115,7 +115,7 @@
             this.textBoxContents.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxContents.Multiline = true;
             this.textBoxContents.Name = "textBoxContents";
-            this.textBoxContents.Size = new System.Drawing.Size(1012, 212);
+            this.textBoxContents.Size = new System.Drawing.Size(1049, 212);
             this.textBoxContents.TabIndex = 4;
             // 
             // lblDrawingList
@@ -145,7 +145,7 @@
             this.chkSaveDrawings.AutoSize = true;
             this.chkSaveDrawings.Checked = true;
             this.chkSaveDrawings.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkSaveDrawings.Location = new System.Drawing.Point(574, 533);
+            this.chkSaveDrawings.Location = new System.Drawing.Point(611, 533);
             this.chkSaveDrawings.Margin = new System.Windows.Forms.Padding(4);
             this.chkSaveDrawings.Name = "chkSaveDrawings";
             this.chkSaveDrawings.Size = new System.Drawing.Size(120, 20);
@@ -215,7 +215,7 @@
             this.linkLblLicense.AutoSize = true;
             this.linkLblLicense.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.linkLblLicense.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
-            this.linkLblLicense.Location = new System.Drawing.Point(401, 541);
+            this.linkLblLicense.Location = new System.Drawing.Point(411, 541);
             this.linkLblLicense.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLblLicense.Name = "linkLblLicense";
             this.linkLblLicense.Size = new System.Drawing.Size(91, 16);
@@ -232,7 +232,7 @@
             this.linkLblHelp.AutoSize = true;
             this.linkLblHelp.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.linkLblHelp.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
-            this.linkLblHelp.Location = new System.Drawing.Point(500, 541);
+            this.linkLblHelp.Location = new System.Drawing.Point(510, 541);
             this.linkLblHelp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLblHelp.Name = "linkLblHelp";
             this.linkLblHelp.Size = new System.Drawing.Size(36, 16);
@@ -247,7 +247,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.ClientSize = new System.Drawing.Size(1045, 567);
+            this.ClientSize = new System.Drawing.Size(1082, 567);
             this.Controls.Add(this.linkLblHelp);
             this.Controls.Add(this.linkLblLicense);
             this.Controls.Add(this.LinkedIn);
@@ -265,7 +265,7 @@
             this.Controls.Add(this.btnBrowseDrawings);
             this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(1061, 605);
+            this.MinimumSize = new System.Drawing.Size(1100, 605);
             this.Name = "MainForm";
             this.Text = "Batch Scripter";
             ((System.ComponentModel.ISupportInitialize)(this.LinkedIn)).EndInit();

@@ -231,53 +231,39 @@ namespace Batch_Scripter
 
         private void linkLblFootnote_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            string url = "https://ca.linkedin.com/in/oliverwackenreuther";
-            try
-            {
-                System.Diagnostics.Process.Start(url);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Unable to open link. {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            OpenUrl("https://ca.linkedin.com/in/oliverwackenreuther");
         }
 
         private void linkLblLicense_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            string url = "https://github.com/OliversDev/Batch-Scripter-App-for-AutoCAD/blob/master/LICENSE.txt";
-            try
-            {
-                System.Diagnostics.Process.Start(url);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Unable to open link. {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            OpenUrl("https://github.com/OliversDev/Batch-Scripter-App-for-AutoCAD/blob/master/LICENSE.txt");
         }
 
         private void linkLblHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            string url = "https://github.com/OliversDev/Batch-Scripter-App-for-AutoCAD/blob/master/README.md";
+            OpenUrl("https://github.com/OliversDev/Batch-Scripter-App-for-AutoCAD/blob/master/README.md");
+        }
+
+        private void GitHub_Click(object sender, EventArgs e)
+        {
+            OpenUrl("https://github.com/OliversDev");
+        }
+
+        private void LinkedIn_Click(object sender, EventArgs e)
+        {
+            OpenUrl("https://ca.linkedin.com/in/oliverwackenreuther");
+        }
+
+        private void OpenUrl(string url)
+        {
             try
             {
-                System.Diagnostics.Process.Start(url);
+                Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Unable to open link. {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void GitHub_Click(object sender, EventArgs e)
-        {
-            string url = "https://github.com/OliversDev";
-            Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
-        }
-
-        private void LinkedIn_Click(object sender, EventArgs e)
-        {
-            string url = "https://ca.linkedin.com/in/oliverwackenreuther";
-            Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
         }
     }
 }
